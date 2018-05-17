@@ -1,11 +1,23 @@
 .btn {
     /* We want to give the button a blue background,
     and make the text white. */
-    background-color: #2f5572;
+    background-color: $mainBlue;
     color: white;
     text-decoration: none;
-    padding: 1.2rem;
-    display: inline-block;
+    padding: .75rem 1.2rem;
+    display: inline-block; /*makes sure parent and surrounding elements are aware of its padding.*/
     margin: 0rem;
-    border: solid 1.1rem blue
+
+    &--orange {
+        background-color: $mainOrange;
+    }
+
+    &--large {
+        /* implied default font size of 1rem on tiny screens */
+        padding: 1.1rem 1.9rem;
+
+        @mixin atSmall {
+            font-size: 1.25rem;
+        }
+    }
 }

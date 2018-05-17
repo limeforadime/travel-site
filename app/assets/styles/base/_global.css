@@ -7,3 +7,11 @@ img {
     height: auto;
 }
 
+* {
+    box-sizing: border-box; /* overrides browser's normal way of calculating width */
+}
+
+a {
+    color: $mainOrange;
+}
+

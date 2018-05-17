@@ -1,0 +1,15 @@
+.generic-content-container {
+
+    p {
+        line-height: 1.65;
+        margin: 1.8rem 0;
+        /* regular font will default to 16 */
+        @mixin atSmall {
+            font-size: 1.125rem; /* but once screen gets a bit bigger, make font bigger. */
+        }
+    }
+
+    p a {
+        font-weight: 700; 
+    }
+}

@@ -1,0 +1,13 @@
+{{#shapes}}
+    .icon--{{base}} {
+        width: {{width.outer}}px;
+        height: {{height.outer}}px;
+        /* the "sprite" variable will deal with finding the path of the sprite file */
+        /* We want this instead of typing it ourselves because the filename changes every time task is run. */
+        /* Also, we used 3 brackets because the sprite var will include a forward slash, 
+        and we don't want that character to be escaped. */
+        background-image: url('/temp/sprite/css/{{{sprite}}}');
+        /* instead of typing x and y position myself, can use this variable: */
+        background-position: {{position.relative.xy}};
+    }
+{{/shapes}}

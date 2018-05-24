@@ -1,0 +1,21 @@
+/* Do no edit modules/_sprite directly as it is generated automatically by Gulp. Instead,
+  edit gulp/templates/sprite.css */
+
+{{#shapes}}
+  {{#first}}
+  /* Anything that is inside here will only be run once */
+      .icon {
+          /* the "sprite" variable will deal with finding the path of the sprite file */
+          /* We want this instead of typing it ourselves because the filename changes every time task is run. */
+          /* Also, we used 3 brackets because the sprite var will include a forward slash, 
+          and we don't want that character to be escaped. */
+          background-image: url('/assets/images/sprites/{{{sprite}}}');
+      }
+  {{/first}}
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    /* instead of typing x and y position myself, can use this variable: */
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}

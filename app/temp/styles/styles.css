@@ -925,9 +925,15 @@ a {
     }
 @media (min-width: 800px) {
 .site-header {
+        position: fixed;
         background-color: rgba(47,85,114, .3)
+        
+        /* Section for sticky site header for medium or larger screens */
 
 }
+        .site-header--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
 @media (min-width: 800px) {
 .site-header__btn-container {
@@ -944,6 +950,9 @@ a {
          /* using translateX at -50% will pull it left by its OWN WIDTH */
         -webkit-transform: translateX(-50%) scale(.8);
                 transform: translateX(-50%) scale(.8);
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         -webkit-transform-origin: 50% 0;
                 transform-origin: 50% 0;
     }
@@ -952,7 +961,17 @@ a {
             left: auto;
             -webkit-transform: translateX(0);
                     transform: translateX(0)
+
+            /* Note: This selector signature means that it will target:
+                site-header__logo only when site-header--dark is also active on the site-header element 
+            The space between the .site-header--dark and the & means that only the & (site-header__logo) 
+            will be targeted because it is a CHILD of the first part, .site-header--dark.
+                */
     }
+            .site-header--dark .site-header__logo {
+                -webkit-transform: scale(.565);
+                        transform: scale(.565);
+            }
     }
 .site-header__logo__graphic {
         text-indent: -9999px;

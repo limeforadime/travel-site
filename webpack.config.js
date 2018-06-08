@@ -4,12 +4,15 @@ var absolutePath = require('path');
 //  so webpack can find file on our computer.
 
 module.exports = {
-  entry: "./app/assets/scripts/App.js",
+  entry: {
+    App: "./app/assets/scripts/App.js",
+    Vendor: "./app/assets/scripts/Vendor.js"
+  },
   // will use this area to BUNDLE UP our javascript,
   output: {
     // must use absolute path here using node's 'path' package
     path: absolutePath.resolve(__dirname, "./app/temp/scripts"),
-    filename: "App.js"
+    filename: "[name].js" 
   },
   // will use this area to CONVERT our javascript
   module: {

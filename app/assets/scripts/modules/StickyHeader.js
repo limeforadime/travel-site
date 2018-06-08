@@ -5,6 +5,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class StickyHeader {
 
     constructor() {
+        this.lazyImages = $("lazyload");
         this.siteHeader = $(".site-header");
         this.headerTriggerElement = $(".large-hero__title");
         // want a variable that represents a collection of our page section elements.
@@ -14,8 +15,16 @@ class StickyHeader {
         this.createHeaderWaypoint();
         this.createPageSectionWaypoints();
         this.addSmoothScrolling();
+        this.refreshWaypoints();
     }
 
+    // using lazy loading messes with waypoints, so we need a way to refresh them when a 
+    // new image to be lazy loaded is added.
+    refreshWaypoints() {
+        this.lazyImages.on('load', function() {  // will refresh all waypoints when lazy image is loaded.
+            Waypoint.refreshAll();
+        });
+    }
     addSmoothScrolling() {
         this.headerLinks.smoothScroll( {
             speed: "auto",

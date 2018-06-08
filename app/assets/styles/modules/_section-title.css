@@ -7,6 +7,10 @@
         font-size: 3.75rem;
     }
 
+    &--less-margin {
+        margin-top: 0;
+        margin-bottom: 1.3rem;
+    }
     /* Will target just strong tags within the section-title class */
     strong {
         font-weight: 500;

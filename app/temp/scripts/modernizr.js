@@ -1,14 +1,6 @@
 /*!
  * modernizr v3.6.0
-<<<<<<< HEAD
-<<<<<<< HEAD
- * Build https://modernizr.com/download?-svg-setclasses-dontmin
-=======
  * Build https://modernizr.com/download?-flexbox-svg-setclasses-dontmin
->>>>>>> browser-support
-=======
- * Build https://modernizr.com/download?-flexbox-svg-setclasses-dontmin
->>>>>>> browser-support
  *
  * Copyright (c)
  *  Faruk Ates
@@ -239,11 +231,6 @@
   }
 
   ;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> browser-support
 
   /**
    * If the browsers follow the spec, then they would expose vendor-specific styles as:

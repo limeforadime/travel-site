@@ -1,7 +1,11 @@
 /*!
  * modernizr v3.6.0
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Build https://modernizr.com/download?-svg-setclasses-dontmin
+=======
+ * Build https://modernizr.com/download?-flexbox-svg-setclasses-dontmin
+>>>>>>> browser-support
 =======
  * Build https://modernizr.com/download?-flexbox-svg-setclasses-dontmin
 >>>>>>> browser-support
@@ -236,7 +240,10 @@
 
   ;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> browser-support
 
   /**
    * If the browsers follow the spec, then they would expose vendor-specific styles as:
@@ -821,7 +828,6 @@ Detects support for the Flexible Box Layout model, a.k.a. Flexbox, which allows 
 
   Modernizr.addTest('flexbox', testAllProps('flexBasis', '1px', true));
 
->>>>>>> browser-support
 /*!
 {
   "name": "SVG",

@@ -11,6 +11,10 @@
           and we don't want that character to be escaped. */
           background-image: url('/assets/images/sprites/{{{sprite}}}');
       }
+
+      .no-svg .icon {
+        background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+      }
   {{/first}}
   .icon--{{base}} {
     width: {{width.outer}}px;

@@ -45,7 +45,7 @@
             will be targeted because it is a CHILD of the first part, .site-header--dark.
                 */
             .site-header--dark & {
-                transform: scale(.565);
+                transform: scale(.55);
             }
         }
     }

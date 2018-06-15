@@ -46,6 +46,10 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
         .pipe(gulp.dest("./docs/assets/images"));
 });
 
+gulp.task('useminTrigger',['deleteDistFolder'], function() {
+    gulp.start('usemin');
+});
+
 gulp.task('usemin', ['styles', 'scripts'], function() {
     return gulp.src('./app/index.html')
         .pipe(usemin({
@@ -57,4 +61,4 @@ gulp.task('usemin', ['styles', 'scripts'], function() {
         .pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'usemin'] );
+gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger'] );

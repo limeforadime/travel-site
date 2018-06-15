@@ -4,19 +4,16 @@
     @mixin atMedium {
         padding-top: 0;
     }
-
     &--pull-right {
         @mixin atMedium {
             float: right;
         }
     }
-
     ul {
         margin: 0;
         padding: 0;
         @mixin clearFix;
     }
-
     li {
         list-style: none;
         padding-right: 7px;

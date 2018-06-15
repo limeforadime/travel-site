@@ -24,7 +24,6 @@
         }
        
     }
-
     &__logo {
         position: absolute;
         top: 0;
@@ -38,7 +37,6 @@
         @mixin atMedium {
             left: auto;
             transform: translateX(0);
-
             /* Note: This selector signature means that it will target:
                 site-header__logo only when site-header--dark is also active on the site-header element 
             The space between the .site-header--dark and the & means that only the & (site-header__logo) 
@@ -49,11 +47,9 @@
             }
         }
     }
-
     &__logo__graphic {
         text-indent: -9999px;
     }
-
     &__menu-icon {
         width: 20px;
         height: 19px;
@@ -100,7 +96,6 @@
             display: none;
         }
     }
-
     &__menu-icon--close-x {
         &::before {
             transform: rotate(45deg) scaleX(1.25);
@@ -130,7 +125,6 @@
             padding-top: 0;
             transform: scale(1);
         }
-
         &--is-visible {
             opacity: 1;
             z-index: 1;

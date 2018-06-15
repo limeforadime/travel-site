@@ -5,23 +5,18 @@
     &--t-padding {
         padding-top: 80px;
     }
-
     &--gutters {
         margin-right: -65px;
     }
-
     &--gutters-large {
         margin-right: -100px;
     }
-
     &--gutters > div {
         padding-right: 65px;
     }
-
     &--gutters-small {
         margin-right: -45px;
     }
-
     &--gutters-small > div {
         padding-right: 45px;
     }
@@ -40,11 +35,9 @@
             float: left;
             width: 33.33%;
         }
-        
         &__medium-4--larger {
             width: 37%;
         }
-
         &__medium-6 {
             float: left;
             width: 50%;
@@ -53,7 +46,6 @@
             float: left;
             width: 66.66%;
         }
-
         &__medium-8--smaller {
             width: 63%;
         }
@@ -68,11 +60,9 @@
             float: left;
             width: 33.33%;
         }
-        
         &__large-4--larger {
             width: 37%;
         }
-
         &__large-6 {
             float: left;
             width: 50%;
@@ -81,11 +71,9 @@
             float: left;
             width: 66.66%;
         }
-
         &__large-8--smaller {
             width: 63%;
         }
-
     }
     
     /* Begin Equal Height Rules */

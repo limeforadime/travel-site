@@ -7,7 +7,6 @@
         padding: 0 1.8125rem 1px 1.8125rem;
         margin-bottom: 0;
     }
-
     &--last {
         margin-bottom: 0;
     }
@@ -21,7 +20,6 @@
         top: -80px;
         border: solid rgba(255,255,255, .8) 5px;
     }
-
     &__title {
         color: $mainBlue;
         text-align: center;

@@ -7,11 +7,11 @@
           /* We want this instead of typing it ourselves because the filename changes every time task is run. */
           /* Also, we used 3 brackets because the sprite var will include a forward slash, 
           and we don't want that character to be escaped. */
-          background-image: url('/assets/images/sprites/sprite-e79e95cc.svg');
+          background-image: url('../../assets/images/sprites/sprite-e79e95cc.svg');
       }
 
       .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-e79e95cc.png');
+        background-image: url('../../assets/images/sprites/sprite-e79e95cc.png');
       }
   .icon--clear-view-escapes {
     width: 144.4px;

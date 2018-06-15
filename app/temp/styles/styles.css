@@ -635,11 +635,9 @@ a {
             float: left;
             width: 33.33%;
         }
-        
         .row__medium-4--larger {
             width: 37%;
         }
-
         .row__medium-6 {
             float: left;
             width: 50%;
@@ -648,7 +646,6 @@ a {
             float: left;
             width: 66.66%;
         }
-
         .row__medium-8--smaller {
             width: 63%;
         }
@@ -662,11 +659,9 @@ a {
             float: left;
             width: 33.33%;
         }
-        
         .row__large-4--larger {
             width: 37%;
         }
-
         .row__large-6 {
             float: left;
             width: 50%;
@@ -675,7 +670,6 @@ a {
             float: left;
             width: 66.66%;
         }
-
         .row__large-8--smaller {
             width: 63%;
         }
@@ -975,7 +969,6 @@ a {
             left: auto;
             -webkit-transform: translateX(0);
                     transform: translateX(0)
-
             /* Note: This selector signature means that it will target:
                 site-header__logo only when site-header--dark is also active on the site-header element 
             The space between the .site-header--dark and the & means that only the & (site-header__logo) 
